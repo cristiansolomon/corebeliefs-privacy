@@ -1,1 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy – Core Beliefs</title>
+    <meta name="description" content="Privacy Policy for the Core Beliefs Android application, including local data storage, exports, retention, deletion, and contact information.">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#155f63">
+    <style>
+        :root {
+            --background: #f5f7f8;
+            --surface: #ffffff;
+            --text: #1d2a2b;
+            --muted: #5e6e70;
+            --primary: #155f63;
+            --primary-soft: #e5f1f1;
+            --border: #dce5e6;
+            --warning: #fff3cd;
+            --warning-border: #e4c76b;
+            --shadow: 0 16px 45px rgba(25, 56, 59, 0.08);
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            color: var(--text);
+            background: var(--background);
+            font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+            font-size: 17px;
+            line-height: 1.7;
+        }
+
+        a {
+            color: var(--primary);
+        }
+
+        .site-header {
+            background: linear-gradient(135deg, #104c50, #21858a);
+            color: white;
+            padding: 56px 20px 48px;
+        }
+
+        .header-inner,
+        main,
+        .footer-inner {
+            width: min(100% - 32px, 920px);
+            margin: 0 auto;
+        }
+
+        .eyebrow {
+            margin: 0 0 8px;
+            font-size: 0.82rem;
+            font-weight: 700;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            opacity: 0.85;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: clamp(2rem, 7vw, 3.4rem);
+            line-height: 1.12;
+        }
+
+        .subtitle {
+            max-width: 700px;
+            margin: 16px 0 0;
+            color: rgba(255, 255, 255, 0.88);
+        }
+
+        .language-nav {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 26px;
+        }
+
+        .language-nav a {
+            display: inline-block;
+            padding: 9px 16px;
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            border-radius: 999px;
+            color: white;
+            text-decoration: none;
+            font-weight: 650;
+        }
+
+        .language-nav a:hover,
+        .language-nav a:focus-visible {
+            background: white;
+            color: var(--primary);
+            outline: none;
+        }
+
+        main {
+            padding: 34px 0 70px;
+        }
+
+        .notice {
+            margin-bottom: 24px;
+            padding: 16px 18px;
+            border: 1px solid var(--warning-border);
+            border-radius: 14px;
+            background: var(--warning);
+        }
+
+        .notice strong {
+            display: block;
+            margin-bottom: 4px;
+        }
+
+        .policy {
+            margin-bottom: 34px;
+            padding: clamp(22px, 5vw, 48px);
+            border: 1px solid var(--border);
+            border-radius: 22px;
+            background: var(--surface);
+            box-shadow: var(--shadow);
+        }
+
+        .policy-label {
+            display: inline-block;
+            margin-bottom: 14px;
+            padding: 5px 11px;
+            border-radius: 999px;
+            color: var(--primary);
+            background: var(--primary-soft);
+            font-size: 0.82rem;
+            font-weight: 750;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+        }
+
+        h2 {
+            margin: 0 0 6px;
+            color: var(--primary);
+            font-size: clamp(1.65rem, 4vw, 2.35rem);
+            line-height: 1.2;
+        }
+
+        h3 {
+            margin: 34px 0 8px;
+            color: #163f42;
+            font-size: 1.18rem;
+            line-height: 1.35;
+        }
+
+        p {
+            margin: 0 0 16px;
+        }
+
+        .effective-date {
+            margin-bottom: 28px;
+            color: var(--muted);
+            font-weight: 650;
+        }
+
+        ul {
+            margin: 8px 0 20px;
+            padding-left: 24px;
+        }
+
+        li + li {
+            margin-top: 7px;
+        }
+
+        code {
+            padding: 2px 6px;
+            border-radius: 6px;
+            background: #edf2f2;
+            font-size: 0.9em;
+        }
+
+        .contact-card {
+            margin-top: 12px;
+            padding: 18px;
+            border-left: 4px solid var(--primary);
+            border-radius: 8px;
+            background: var(--primary-soft);
+        }
+
+        .contact-card p:last-child {
+            margin-bottom: 0;
+        }
+
+        footer {
+            padding: 26px 0;
+            border-top: 1px solid var(--border);
+            color: var(--muted);
+            background: var(--surface);
+            font-size: 0.92rem;
+        }
+
+        .footer-inner {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 10px 24px;
+        }
+
+        @media (max-width: 600px) {
+            .site-header {
+                padding-top: 38px;
+            }
+
+            body {
+                font-size: 16px;
+            }
+
+            .header-inner,
+            main,
+            .footer-inner {
+                width: min(100% - 22px, 920px);
+            }
+
+            .policy {
+                border-radius: 16px;
+            }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            html {
+                scroll-behavior: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="site-header" id="top">
+        <div class="header-inner">
+            <p class="eyebrow">Core Beliefs Android App</p>
+            <h1>Privacy Policy</h1>
+            <p class="subtitle">How Core Beliefs handles locally stored session information, exports, retention, and deletion.</p>
+            <nav class="language-nav" aria-label="Language navigation">
+                <a href="#english">English</a>
+                <a href="#romana">Română</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <aside class="notice" aria-label="Publishing reminder">
+            <strong>Before publishing / Înainte de publicare</strong>
+            Replace every occurrence of <code>cristiansolomon@yahoo.com</code> with your privacy contact email address. / Înlocuiește fiecare apariție a textului <code>cristiansolomon@yahoo.com</code> cu adresa de e-mail pentru întrebări privind confidențialitatea.
+        </aside>
+
+        <article class="policy" id="english" lang="en">
+            <span class="policy-label">English</span>
+            <h2>Privacy Policy for Core Beliefs App</h2>
+            <p class="effective-date">Effective date: November 12, 2026</p>
+
+            <p>This Privacy Policy explains how the Core Beliefs mobile application (“Core Beliefs”, “the app”) handles information when you use it.</p>
+            <p>Core Beliefs is developed and provided by <strong>Cristian Solomon</strong>. The Android application identifier is <code>com.corebeliefs.app</code>.</p>
+
+            <h3>1. Information collected by the developer</h3>
+            <p>Core Beliefs does not collect, transmit, sell, or share personal information with the developer or with third parties.</p>
+            <p>The app does not require you to create an account or provide your name, email address, telephone number, location, or other identifying information.</p>
+            <p>The app does not include advertising, analytics, behavioral tracking, or third-party data-collection services.</p>
+
+            <h3>2. Information stored locally on your device</h3>
+            <p>Core Beliefs allows you to create and store information related to your personal reflection or complementary practice sessions. This information may include:</p>
+            <ul>
+                <li>selected limiting beliefs and belief formulations;</li>
+                <li>replacement decisions and replacement beliefs;</li>
+                <li>user-created tables and table entries;</li>
+                <li>manually entered observations or associated imbalances;</li>
+                <li>completed session records and summaries;</li>
+                <li>language, appearance, and other application preferences.</li>
+            </ul>
+            <p>This information is stored locally in the app’s private storage area on your device. It is not automatically transmitted to the developer or to any external server.</p>
+            <p>The developer cannot access, view, recover, or remotely delete information stored locally on your device.</p>
+
+            <h3>3. Device permissions</h3>
+            <p>Core Beliefs does not request access to your location, contacts, camera, microphone, photographs, messages, phone calls, or other sensitive device information.</p>
+            <p>The app does not request internet access.</p>
+
+            <h3>4. Copying and exporting session information</h3>
+            <p>The app allows you to copy a session summary to the device clipboard or export it as a TXT file.</p>
+            <p>These actions are initiated by you. When exporting a file, you select the storage location or external service through Android’s system file interface.</p>
+            <p>After information is copied or exported, its storage, protection, sharing, and deletion are under your control. If you choose an external application or cloud-storage provider, that service may process the exported information under its own privacy policy.</p>
+            <p>Core Beliefs does not automatically upload or share exported information.</p>
+
+            <h3>5. Data retention and deletion</h3>
+            <p>Locally stored information remains on your device until you:</p>
+            <ul>
+                <li>delete an individual session or table using the controls available in the app;</li>
+                <li>clear the application’s data through the Android system settings; or</li>
+                <li>uninstall the application.</li>
+            </ul>
+            <p>Deleting an archived session permanently removes that session from the app’s local storage. This action cannot be undone.</p>
+            <p>Clearing the app’s data or uninstalling the app removes its locally stored sessions, tables, and preferences, subject to the behavior of your device and any backup functions you have enabled.</p>
+            <p>Files previously exported outside the app are not automatically deleted when you delete a session, clear the app’s data, or uninstall the app. You must delete exported copies separately from the location where you saved them.</p>
+            <p>Because the developer does not receive or store your session information, there is no developer-operated account or remote database from which personal information must be deleted.</p>
+
+            <h3>6. Data security</h3>
+            <p>Information created in the app is stored using Android’s private application storage mechanisms.</p>
+            <p>Core Beliefs does not transmit session information over the internet. However, no device or storage method can be guaranteed to be completely secure. You are responsible for protecting access to your device and for managing any copies that you export or place in other applications or storage services.</p>
+
+            <h3>7. Third-party services</h3>
+            <p>Core Beliefs does not integrate advertising networks, analytics platforms, social-media trackers, or cloud synchronization services.</p>
+            <p>The app is distributed through Google Play. Google may independently process information related to downloading, installing, purchasing, reviewing, or using Google Play according to Google’s own privacy policies. This information is not received or controlled by the Core Beliefs developer.</p>
+
+            <h3>8. Children’s privacy</h3>
+            <p>Core Beliefs is not specifically designed or directed toward children. The developer does not knowingly collect personal information from children through the app.</p>
+            <p>Because the app does not transmit user information to the developer, the developer does not receive information identifying a user’s age.</p>
+
+            <h3>9. Health and sensitive information</h3>
+            <p>Core Beliefs is intended for personal reflection, educational exploration, and session documentation. It is not a medical or psychological diagnostic or treatment tool.</p>
+            <p>You should avoid entering information that directly identifies another person or confidential information that you are not authorized to store.</p>
+            <p>If you use the app when working with another person, you are responsible for obtaining any consent required for recording, storing, copying, or exporting information relating to that person.</p>
+
+            <h3>10. Changes to this Privacy Policy</h3>
+            <p>This Privacy Policy may be updated when the app’s functions or data-handling practices change.</p>
+            <p>Any revised policy will be published on the official privacy-policy page with an updated effective date. If a change materially affects how information is handled, the app and the Google Play Data safety information will also be updated where required.</p>
+
+            <h3>11. Contact</h3>
+            <p>For questions, concerns, or requests regarding this Privacy Policy, contact:</p>
+            <div class="contact-card">
+                <p><strong>Cristian Solomon</strong><br>Email: <strong>cristiansolomon@yahoo.com</strong></p>
+            </div>
+        </article>
+
+        <article class="policy" id="romana" lang="ro">
+            <span class="policy-label">Română</span>
+            <h2>Politica de confidențialitate pentru aplicația Core Beliefs</h2>
+            <p class="effective-date">Data intrării în vigoare: 12 noiembrie 2026</p>
+
+            <p>Această Politică de confidențialitate explică modul în care aplicația mobilă Core Beliefs („Core Beliefs” sau „aplicația”) gestionează informațiile atunci când este utilizată.</p>
+            <p>Core Beliefs este dezvoltată și oferită de <strong>Cristian Solomon</strong>. Identificatorul aplicației Android este <code>com.corebeliefs.app</code>.</p>
+
+            <h3>1. Informații colectate de dezvoltator</h3>
+            <p>Core Beliefs nu colectează, nu transmite, nu vinde și nu partajează informații personale cu dezvoltatorul sau cu terțe părți.</p>
+            <p>Aplicația nu necesită crearea unui cont și nu solicită numele, adresa de e-mail, numărul de telefon, localizarea sau alte informații de identificare.</p>
+            <p>Aplicația nu conține reclame, servicii de analiză, instrumente de urmărire a comportamentului sau servicii externe de colectare a datelor.</p>
+
+            <h3>2. Informații stocate local pe dispozitiv</h3>
+            <p>Core Beliefs permite crearea și stocarea unor informații legate de sesiunile de reflecție personală sau de practică complementară. Aceste informații pot include:</p>
+            <ul>
+                <li>credințele limitative și formulările selectate;</li>
+                <li>deciziile și credințele de înlocuire;</li>
+                <li>tabelele și elementele create de utilizator;</li>
+                <li>observațiile sau dezechilibrele asociate introduse manual;</li>
+                <li>sesiunile finalizate și rezumatele acestora;</li>
+                <li>limba, aspectul și alte preferințe ale aplicației.</li>
+            </ul>
+            <p>Aceste informații sunt stocate local, în spațiul privat al aplicației de pe dispozitiv. Ele nu sunt transmise automat dezvoltatorului sau unui server extern.</p>
+            <p>Dezvoltatorul nu poate accesa, consulta, recupera sau șterge de la distanță informațiile stocate local pe dispozitiv.</p>
+
+            <h3>3. Permisiunile dispozitivului</h3>
+            <p>Core Beliefs nu solicită acces la localizare, contacte, cameră, microfon, fotografii, mesaje, apeluri telefonice sau alte informații sensibile ale dispozitivului.</p>
+            <p>Aplicația nu solicită acces la internet.</p>
+
+            <h3>4. Copierea și exportarea informațiilor unei sesiuni</h3>
+            <p>Aplicația permite copierea rezumatului unei sesiuni în clipboardul dispozitivului sau exportarea acestuia într-un fișier TXT.</p>
+            <p>Aceste acțiuni sunt inițiate de utilizator. La exportarea unui fișier, utilizatorul alege locul de stocare sau serviciul extern prin intermediul interfeței de fișiere oferite de Android.</p>
+            <p>După copiere sau exportare, stocarea, protejarea, partajarea și ștergerea informațiilor se află sub controlul utilizatorului. Dacă este aleasă o aplicație externă sau un furnizor de stocare în cloud, serviciul respectiv poate prelucra informațiile exportate conform propriei politici de confidențialitate.</p>
+            <p>Core Beliefs nu încarcă și nu partajează automat informațiile exportate.</p>
+
+            <h3>5. Păstrarea și ștergerea datelor</h3>
+            <p>Informațiile stocate local rămân pe dispozitiv până când utilizatorul:</p>
+            <ul>
+                <li>șterge o anumită sesiune sau un anumit tabel folosind funcțiile aplicației;</li>
+                <li>șterge datele aplicației din setările sistemului Android; sau</li>
+                <li>dezinstalează aplicația.</li>
+            </ul>
+            <p>Ștergerea unei sesiuni arhivate elimină definitiv sesiunea respectivă din spațiul local al aplicației. Acțiunea nu poate fi anulată.</p>
+            <p>Ștergerea datelor aplicației sau dezinstalarea acesteia elimină sesiunile, tabelele și preferințele stocate local, în funcție de comportamentul dispozitivului și de eventualele funcții de backup activate.</p>
+            <p>Fișierele exportate anterior în afara aplicației nu sunt șterse automat atunci când este eliminată o sesiune, când sunt șterse datele aplicației sau când aplicația este dezinstalată. Copiile exportate trebuie șterse separat din locul în care au fost salvate.</p>
+            <p>Deoarece dezvoltatorul nu primește și nu stochează informațiile sesiunilor, nu există un cont administrat de dezvoltator sau o bază de date la distanță din care să fie necesară ștergerea informațiilor personale.</p>
+
+            <h3>6. Securitatea datelor</h3>
+            <p>Informațiile create în aplicație sunt păstrate folosind mecanismele de stocare privată oferite de Android.</p>
+            <p>Core Beliefs nu transmite informațiile sesiunilor prin internet. Totuși, niciun dispozitiv și nicio metodă de stocare nu pot fi garantate ca fiind complet sigure. Utilizatorul este responsabil pentru protejarea accesului la propriul dispozitiv și pentru gestionarea copiilor exportate sau salvate în alte aplicații ori servicii de stocare.</p>
+
+            <h3>7. Servicii furnizate de terțe părți</h3>
+            <p>Core Beliefs nu integrează rețele publicitare, platforme de analiză, instrumente de urmărire prin rețele sociale sau servicii de sincronizare în cloud.</p>
+            <p>Aplicația este distribuită prin Google Play. Google poate prelucra în mod independent informații legate de descărcarea, instalarea, achiziționarea, evaluarea sau utilizarea serviciului Google Play, conform propriilor politici de confidențialitate. Aceste informații nu sunt primite și nu sunt controlate de dezvoltatorul Core Beliefs.</p>
+
+            <h3>8. Confidențialitatea copiilor</h3>
+            <p>Core Beliefs nu este concepută și nu se adresează în mod specific copiilor. Dezvoltatorul nu colectează în mod conștient informații personale de la copii prin intermediul aplicației.</p>
+            <p>Deoarece aplicația nu transmite dezvoltatorului informațiile utilizatorilor, dezvoltatorul nu primește informații care să indice vârsta acestora.</p>
+
+            <h3>9. Informații privind sănătatea și alte informații sensibile</h3>
+            <p>Core Beliefs este destinată reflecției personale, explorării educaționale și documentării sesiunilor. Nu este un instrument de diagnostic sau tratament medical ori psihologic.</p>
+            <p>Se recomandă evitarea introducerii unor informații care identifică în mod direct o altă persoană sau a unor informații confidențiale pe care utilizatorul nu este autorizat să le stocheze.</p>
+            <p>Dacă aplicația este folosită în lucrul cu o altă persoană, utilizatorul este responsabil pentru obținerea acordului necesar pentru înregistrarea, stocarea, copierea sau exportarea informațiilor referitoare la persoana respectivă.</p>
+
+            <h3>10. Modificarea acestei politici</h3>
+            <p>Această Politică de confidențialitate poate fi actualizată atunci când se modifică funcțiile aplicației sau modul de gestionare a informațiilor.</p>
+            <p>Politica revizuită va fi publicată pe pagina oficială a politicii de confidențialitate și va conține o nouă dată de intrare în vigoare. Dacă modificarea influențează în mod semnificativ gestionarea informațiilor, vor fi actualizate și aplicația, precum și declarațiile din secțiunea Siguranța datelor din Google Play, atunci când este necesar.</p>
+
+            <h3>11. Contact</h3>
+            <p>Pentru întrebări, nelămuriri sau solicitări referitoare la această Politică de confidențialitate, puteți contacta:</p>
+            <div class="contact-card">
+                <p><strong>Cristian Solomon</strong><br>E-mail: <strong>cristiansolomon@yahoo.com</strong></p>
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <div class="footer-inner">
+            <span>© 2026 Cristian Solomon</span>
+            <a href="#top">Back to top / Înapoi sus</a>
+        </div>
+    </footer>
+</body>
+</html>
 
